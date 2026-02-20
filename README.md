@@ -90,10 +90,10 @@ Filter context was carefully managed using slicers (Month & Branch), allowing dy
 
 ## 📊 V. Key Insights
 
-- 📈 December had the highest loan placement (~284M).
-- ⚠️ March showed the highest relative exposure (~6.03%).
+- 📈 December had the highest loan placement (284M).
+- ⚠️ March showed the highest relative exposure (6.03%).
 - 💰 Total payments exceed total placement, indicating portfolio profitability.
-- 🏢 Branch exposure levels remain stable (~4% average).
+- 🏢 Branch exposure levels remain stable (4% average).
 - 📊 No critical risk concentration was detected across branches.
 
 ---
@@ -137,6 +137,6 @@ https://app.powerbi.com/view?r=eyJrIjoiOGM0Y2ExYmEtN2ZkMi00OTU2LWFiYmYtMDkzZjQ3O
 
 ---
 
-👨‍💻 **Author:** Max  Silva Parraguez
+👨‍💻 **Author:** Eng. Maximo Silva Parraguez<br>
+**Systems Engineer | Business Intelligence | Data Analytics.**
 
-Systems Engineer | Business Intelligence | Data Analytics
