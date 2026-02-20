@@ -1,5 +1,5 @@
 # 📊 CREDIT PORTFOLIO ANALYSIS
-### Monthly & Branch-Level Analysis (Trends, Collection & Risk)
+### Monthly & Branch-Level Analysis (Trends, Collection & Risk Exposure)
 
 ---
 
@@ -9,105 +9,115 @@ This project consists of a Power BI dashboard developed to analyze the performan
 
 The main objective was to evaluate:
 
-- Monthly loan placement
-- Capital recovery
-- Risk exposure
+- Monthly loan placement (growth)
+- Capital recovery performance
+- Portfolio exposure (outstanding balance risk)
 - Branch-level financial behavior
 
-Key question:
+The analysis aims to answer a key business question:
 
-Is the company growing sustainably or increasing financial risk?
+Is the company growing sustainably, or is it increasing financial risk?
 
-(INSERT IMAGE: Full dashboard overview)
+![caratula](https://github.com/user-attachments/assets/5cd679ea-5f32-450e-b870-d877b58576b0)
+
 
 ---
 
 ## 🗂️ II. Dataset Structure
 
-The dataset was aggregated at monthly and branch level.
-
-Each record contains summarized information about originated credits.
+The dataset was previously aggregated at monthly and branch level.  
+Each record contains summarized information about credits originated on specific dates.
 
 ### Main Variables:
 
-- 📅 **Credit Start Date**
-- 🗓️ **B_Month (Monthly Cutoff Date)**
-- 🏢 **Branch**
-- ⚠️ **Debt Status (With Debt / Without Debt)**
-- 💰 **Total Sales (Loan Placement)**
-- 👥 **Number of Clients**
-- 📉 **Outstanding Balance**
-- 💳 **Total Payments**
-- 📄 **Number of Credits**
+- 📅 **Credit Start Date:** Exact date when the credit was initiated.
+- 🗓️ **B_Month:** Representative monthly date (monthly cutoff used for aggregated time analysis).
+- 🏢 **Branch:** Branch where the credit was placed.
+- ⚠️ **Debt Status (With Debt / Without Debt):** Indicates whether the client still has an outstanding balance.
+- 💰 **Total Sales (Total Loan Placement):** Total amount of capital granted.
+- 👥 **Number of Clients:** Total clients who acquired credits.
+- 📉 **Outstanding Balance (Current Debt):** Capital that has not yet been recovered.
+- 💳 **Total Payments:** Total amount paid by clients.
+- 📄 **Number of Credits:** Total number of credits issued.
 
-(INSERT IMAGE: Power BI data model view)
+The data is aggregated (not at individual client level), which allows efficient performance analysis at monthly and branch dimensions.
+
+![Modelo de datos](https://github.com/user-attachments/assets/6f851bd1-4fa4-43b2-a713-9077fd6d9d7e)
 
 ---
 
 ## 🎯 III. Dashboard Objective
 
-The dashboard answers three strategic questions:
+The dashboard was designed to answer three strategic questions:
 
 1️⃣ How much capital is being placed monthly?  
-2️⃣ What percentage has been recovered?  
+2️⃣ What percentage of the capital has been recovered?  
 3️⃣ What is the portfolio exposure level?
 
 ---
 
 ## 📐 IV. DAX Metrics
 
+The following key measures were developed:
+
 ### 🔹 Recovery Rate  
 Total Payments / Total Placement  
-Measures portfolio profitability.
+Measures whether the portfolio is generating profitability.
 
-(INSERT IMAGE: Recovery KPI Card)
+![Porcentaje de Pagos](https://github.com/user-attachments/assets/fef59fce-7b35-463b-89f4-a71999a91144)
 
 ---
 
 ### 🔹 Exposure Rate  
 Outstanding Balance / Total Placement  
-Indicates capital at risk.
+Indicates what proportion of placed capital remains at risk.
 
-(INSERT IMAGE: Exposure KPI Card)
+![Porcentaje Pendiente de Pago](https://github.com/user-attachments/assets/64b708f3-cdcc-42e7-adab-941ed7d9068f)
 
 ---
 
 ### 🔹 Clients with Debt %  
-Percentage of clients with outstanding balance.
+Percentage of clients who still maintain outstanding balance.
 
-(INSERT IMAGE: Clients with Debt KPI Card)
+
+![Porcentaje Cliente Pendiente Pago](https://github.com/user-attachments/assets/6f530b48-9e6a-41a7-bad8-5f228d3b6700)
 
 ---
 
-Filter context was managed so slicers dynamically affect KPIs while historical trend visuals remain globally consistent.
+Filter context was carefully managed using slicers (Month & Branch), allowing dynamic KPI interaction while preserving global historical trend visuals for strategic analysis.
 
 ---
 
 ## 📊 V. Key Insights
 
-- 📈 December had the highest placement (~284M).
-- ⚠️ March showed the highest exposure (~6.03%).
-- 💰 Total payments exceed total placement.
+- 📈 December had the highest loan placement (~284M).
+- ⚠️ March showed the highest relative exposure (~6.03%).
+- 💰 Total payments exceed total placement, indicating portfolio profitability.
 - 🏢 Branch exposure levels remain stable (~4% average).
+- 📊 No critical risk concentration was detected across branches.
 
 ---
 
 ## 🧠 VI. Conclusion
 
-The analysis shows controlled growth.
+The analysis shows that the company is increasing its loan placement while maintaining controlled risk levels.
 
-Recovered capital exceeds placed capital, indicating profitability.
+Recovered capital exceeds placed capital, demonstrating financial profitability.
 
-No critical risk concentration was identified.
+Outstanding balance levels remain stable, and no abnormal branch-level risk patterns were identified.
 
-Overall, the portfolio demonstrates sustainable growth with balanced financial risk.
+In simple terms:  
+The company is growing, and it is doing so responsibly.
+
+This project demonstrates how financial KPIs and data modeling can support sustainable portfolio growth evaluation and strategic decision-making.
 
 ---
 
 ## 🌐 VII. Interactive Dashboard
 
-👉 **View Live Dashboard:**  
-(PASTE YOUR POWER BI SERVICE LINK HERE)
+👉 **View Live Dashboard in Power BI:**  
+
+https://app.powerbi.com/view?r=eyJrIjoiOGM0Y2ExYmEtN2ZkMi00OTU2LWFiYmYtMDkzZjQ3OGM4YzU4IiwidCI6ImVhNzA5NDAxLTc5MWEtNDBkYS1hYTc5LTk3Y2Y1ZmIwZmU3OCJ9
 
 ---
 
@@ -116,17 +126,16 @@ Overall, the portfolio demonstrates sustainable growth with balanced financial r
 - 📊 Power BI
 - 📐 DAX
 - 🔄 Power Query
-- 📊 R (data preprocessing)
 
 ---
 
 ## 📂 VIII. Project Files
 
 - 📁 .pbix file
-- 📄 Dataset
+- 📄 Dataset (CSV)
 - 🖼️ Dashboard images
 
 ---
 
-👨‍💻 **Author:** Max  
+👨‍💻 **Author:** Max  Silva Parraguez
 Systems Engineer | Business Intelligence | Data Analytics
